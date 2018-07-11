@@ -1,6 +1,7 @@
 package TestCases;
 
 import org.testng.annotations.Test;
+//import com.relevantcodes.extentreports.ExtentReports;
 import org.testng.annotations.BeforeTest;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -12,7 +13,6 @@ import org.testng.annotations.AfterTest;
 
 public class AdvDay2 {
 	WebDriver driver;
-	
 
 	  @BeforeTest
 	  public void beforeTest() {
@@ -20,8 +20,7 @@ public class AdvDay2 {
 		  System.setProperty("webdriver.chrome.driver", "Resources\\chromedriver.exe");
 		  driver = new ChromeDriver();
 		  driver.get("https://orangehrm-demo-6x.orangehrmlive.com/auth/login");
-		  driver.manage().window().maximize();  //ainvai
-		  
+		  driver.manage().window().maximize(); 
 	  }
 	  
   @Test
@@ -37,12 +36,10 @@ public class AdvDay2 {
 	  //WebElement actual_result;
   }
   
-
-
   @AfterTest
   public void afterTest() {
-	 driver.close();//hfgj
-	 System.out.println("closing"); //gsddh
+	 driver.close();
+	 System.out.println("closing"); 
   }
 
 }
